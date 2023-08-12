@@ -114,7 +114,6 @@ h3 {
     border-radius: 10px;
 }
 
-/* Intern Styling */
 .intern {
     padding: 25px;
 }
@@ -284,14 +283,14 @@ th {
     background:linear-gradient(rgba(0,1,0,0.5),rgba(0,1,0,0.6));
     padding: 10px 20px;
     border-radius: 5px;
-    color: #fefbfb;
+    color: #ffffff;
     font-weight: bold;
     text-align: center;
     z-index: 9999;
     font-size: 30px;
 }
 
-/* ... Rest of your existing CSS styles ... */
+
 
 /* Ticket Details Table Header and Data Cell Styling */
 #ticket-details-table th,
@@ -369,33 +368,10 @@ body.animation.fadeOut {
     }
 
     h3 .txt {
-        font-weight: 600;
+    font-size: 15px;
     }
 
-    .card {
-        width: 310px;
-        height: 200px;
-        margin: 0 auto;
-        background: linear-gradient(45deg, rgba(2, 0, 36, 1) 0%, rgba(0, 140, 177, 1) 35%, rgba(0, 29, 125, 1) 100%);
-        border: 1px solid rgba(255, 15, 15, 0.3);
-        border-radius: 10px;
-    }
-
-    .intern {
-        padding: 1px;
-    }
-
-    .approximation {
-        width: 30px;
-        transform: rotate(90deg);
-    }
-
-    .chip {
-        height: 40px;
-        position: relative;
-        left: 80%;
-        bottom: 40px;
-    }
+    
 
     .card-number {
         margin-top: 40px;
@@ -413,5 +389,81 @@ body.animation.fadeOut {
     .container-right {
         width: 100%;
     }
+
+/* Main Container Styling */
+.container {
+    display: flex;
+    width: 100%;
+    margin: 3% auto;
+}
+
+/* UI Styling */
+.ui {
+   
+    border-radius: 10px;
+    width: 50%;
+    height: 50%;
+    margin: 20px auto;
+    padding-right:2px;
+    gap: 10px;
+    background:grey;
+ 
+}
+/* Left Container Styling */
+.container-left {
+    width: 100%;
+}
+
+/* Card Number Styling */
+.card-number {
+    margin-top: 40px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: white;
+    display: flex;
+}
+
+/* Card Holder Styling */
+.card-holder {
+    color: whitesmoke;
+}
+
+/* Card Label Styling */
+.card label {
+    font-size: .3rem;
+}
+
+/* Card Infos Styling */
+.card-infos {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    color: white;
+}
+
+
+/* Input Styling */
+input {
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 1.1rem;
+    outline: 0;
+    width: 90%;
+}
+
+
+
+/* Summary Table Styling */
+.summary-table {
+    background-color: #c4acac;
+    color: #1c1c1d;
+    margin-top: 20px;
+    width: 100%;
+}
+
 }
 

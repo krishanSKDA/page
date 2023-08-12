@@ -107,7 +107,10 @@ h3{
         color: #fff;
         
       }
-     
+      .flatpickr-calendar {
+        background-color: #6be6e0;
+        
+      }  
       
     .section{
         margin-bottom: 30px;
@@ -260,88 +263,16 @@ h3{
   
 /* Media Query for Responsive Layout between 300px and 1200px */
 @media  only screen and (max-width: 1200px) and (min-width: 300px) {
-     body{
-        background: #535a5a45;
     
-     }
-    .container {
-        width: 100%;
-        margin: 0 auto;
-       
-    }
-
-    form {
-        
-        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8));
-        border-radius: 5px;
-    }
-
-    .sec label {
-        font-size: 16px;
-    }
-
+   
     #visitDate {
         margin-top: 5px;
         width: 50%;
-    }
-
-    .section {
-        margin-bottom: 15px;
-        margin-top: 20px;
-    }
-
-    h2 {
-        font-size: 24px;
-        margin: 15px 20px;
-    }
-
-    label {
-        font-size: 16px;
-        margin-left: 10px;
-    }
-
-    input[type="number"] {
-        width: 60px;
-        margin-left: 10px;
-    }
-
-    select {
-        margin-left: 10px;
-        width: 50%;
-    }
-    form{
-        width: 300px;
-    }
-    .section2{
-       font-size: 24px;
-    }
-    #summary-table th,
-    #summary-table td {
-        padding: 8px;
-        font-size: 14px;
-    }
-    #pricing-table th.price {
-        font-size: 18px;
-    }
-
-    #summary-table th {
-        font-size: 16px;
-    }
-
-    #summary-table td {
-        font-weight: 600;
-    }
-
-    #summary-table tfoot td {
-        font-size: 16px;
-        word-spacing: 10px;
-    }
-    
-    
+    } 
     #continue-button {
-        margin-left: 100px;
+        margin-left: 1%;
         font-size: 18px;
-        padding: 10px;
+        padding: 1rem;
     }
     #continue-button:hover {
         color: #fff;
@@ -351,8 +282,147 @@ h3{
     #continue-button[disabled] {
         background-color: rgb(156, 148, 148);
     }
-    .pricing-table{
-      margin-right:auto ;
+    
+
+body{
+    background:gray;
+    font-size: 14px;   
+}
+
+header {
+	background: url(./img/back2.jpg);
+	text-align: center;
+	width: 100%;
+	height: auto;
+	background-size: cover;
+	background-attachment: fixed;
+    background-position: center;
+	position: relative;
+	overflow: hidden;
+	border-radius: 0 0 50% 50% / 30%;
+}
+header .overlay{
+	width: 100%;
+	height: 100%;
+	padding: 50px;
+	color: #FFF;
+	text-shadow: 1px 1px 1px #333;
+  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7));
+	
+}
+
+h1 {
+    color: rgba(45, 224, 255, 0.685);
+	font-family: Suez One;
+	font-size: 100px;
+	margin-bottom: 30px;
+}
+
+h3 .txt {
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 30px;
+    font-weight: 400  ;
+}
+h3{
+    margin-bottom: 20px;
+    color: rgb(217, 188, 188);
+}
+.txt{
+    text-align: center;
+    color: #FFF;
+    font-size: 15px;;
+    font-weight: 400;
+}
+
+     form{
+        border: 2px solid rgb(8, 255, 251);
+        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7));
+         border-radius: 5px;
+    
     }
+    .sec label{
+        display: block;
+        text-align: center;
+        font-size: 15px;
+        color: rgb(207, 242, 11);
+        font-weight: 300;  
+    }
+    #visitDate {
+        color: #080707;
+        
+      }
+ 
+      
+    .section{
+        margin-bottom: 30px;
+        margin-top: 35px;
+    }
+    h2{
+        color: #7999b5;
+        margin-bottom: 15px;
+        margin: 20px;
+    }
+    label{
+        display: block;
+        margin-bottom: 10px;
+        color: #8ad0ae;
+        font-weight:400;
+        margin-left: 20px;
+        
+    }
+    input[type="number"]{
+      
+        color: #ffffff;
+     
+    }
+    select {
+        margin-left: 20px;
+        background-color: transparent;
+        color: #0bffba;
+        width: 85%;
+    }
+    select option{
+        background-color:black;
+    }
+   
+
+    #summary-table th{
+        background-color: rgba(45, 51, 57, 0.976);
+        font-size: 13px;
+        color: white;
+    }
+
+    #summary-table tfoot td{
+        font-size: 18px;
+        font-weight: 600;
+        word-spacing: 12px;
+        background-color: #050505;
+        color: #fff;
+    }
+    #continue-button{
+        color: #000000;
+        border: 2px solid; 
+        font-size: 15px;
+        font-weight: 600;
+        text-transform: capitalize;
+        cursor: pointer;
+       
+    }
+
+  .pricing-section {
+    margin-right: 250px;
+  }
+  .pricing-section h2{
+    text-align: left;
+    color: rgb(253, 253, 255);
+  }
+  #pricing-table {
+    width: 10%;
+    margin: auto;
+
+  }
+
+  
   
 }
+

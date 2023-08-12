@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+<link rel="manifest" href="./site.webmanifest">
+<link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#00aba9">
+<meta name="theme-color" content="#ffffff">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+  <link rel="stylesheet" href="./details.css">
+  <title>Detail page</title>
+</head>
+<body>
+  <header>
+    <div class="overlay">
+      <h1>Buy Tickets</h1>
+     <h3>Details sections...</h3>
+      <p class="txt"> We're excited to have you here. Please fill out the form below with your personal details so that we can enhance your experience on our website. By providing accurate information, we can tailor our content and services to better suit your preferences. Thank you for joining us.</p>
+    </div>
+  </header>
+
+  <!--Data Form -->
+  <div class="container">
+    <section class="sec1">
+    <form action="#" method="post">
+      <h2>Enter Your Details</h2>
+      <div class="content">
+        <div class="input-box">
+          <label for="name">Full Name</label>
+          <p>Same as on your ID</p>
+          <input type="text" placeholder="Enter full name" name="name" id="name" required autocomplete="off">
+        </div>
+        <div class="input-box">
+          <label for="number">Mobile Number</label>
+          <p>We may reach out booking updates here over SMS/Whatsapp</p>
+          <div class="flag-container">
+            <div id="flag" class="flag-icon"></div>
+            <input type="tel" placeholder="Mobile Number" id="phone-input" name="number" required autocomplete="off">
+          </div>
+        </div>
+        <div class="input-box">
+          <label for="email">E-mail</label>
+          <p>We will send your Tickets here</p>
+          <input type="email" placeholder="Enter your email address" name="email" required autocomplete="off">
+        </div>
+        <div class="input-box">
+          <label for="c-email">Confirm E-mail</label>
+          <p>Just to ensure we've got this right</p>
+          <input type="email" placeholder="Enter confirm e-mail" name="c-mail" required autocomplete="off">
+        </div>
+        <div class="input-box">
+          <label for="gender">Gender</label>
+          <select name="gender" id="country-list">
+            <option value="none" disabled selected>Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+      </div>
+      <div class="button-container">
+        <button type="submit" id="submit-button" disabled>
+          <span class="transition"></span>
+          <span class="gradient"></span>
+          <span class="label">Continue With Purchase</span>
+        </button>
+      
+    </form>
+    </section>
+   
+   <section class="sec2">
+   <!--Table for Ticket Details -->
+    <h1 id="Ticket">Ticket Details</h1>
+   <table id="details-table">
+    <thead>
+      <tr>
+        <th>Category</th>
+        <th>Quantity</th>
+        <th>Price</th>
+    
+      </tr>
+    </thead>
+    <tbody id="details-table-body">
+      <!-- Dynamically populate this table with data from Local Storage -->
+    </tbody>
+    </table>
+   <p id="total">Total Payable: $<span id="details-total"></span></p>
+  </section>
+  </div>
+  <script src="./details.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script>
+</body>
+</html>

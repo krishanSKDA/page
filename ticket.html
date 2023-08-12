@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+<link rel="manifest" href="./site.webmanifest">
+<link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#00aba9">
+<meta name="theme-color" content="#ffffff">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./ticket.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <title>Ticket Page</title>
+</head>
+<body>
+    <header>
+        <div class="overlay">
+            <h1>Buy Tickets</h1>
+            <h3>Why you Choosing us..</h3>
+            <p class="txt">Welcome to our online ticket booking platform, dedicated to providing a seamless, convenient, and enjoyable experience for entertainment needs. Our top priorities include safety and security, ensuring personal information is protected and handled with utmost care. Our dedicated team is available to assist with queries and concerns, providing prompt and friendly customer support. Our platform is simple and intuitive, allowing users to secure tickets and create unforgettable memories with just a few clicks. Thank you for choosing us as your trusted ticket booking partner.</p>
+                
+              
+        </div>     
+    </header>
+
+<div class="container">
+  <section class="section1">    
+    <form action="#">
+      <div class="sec">
+        <label for="visitDate">When are you coming ?</label>
+        <input type="text" id="visitDate">
+  </div>
+    <div class="section">
+        <h2>Guests</h2>
+        <label for="foreigner-adult">Foreigner Adult</label>
+        <input type="number" id="foreigner-adult" min="0">
+        <label for="foreigner-child">Foreigner Child</label>
+        <input type="number" id="foreigner-child" min="0">
+        <label for="sl-adult">SL Adult</label>
+        <input type="number" id="sl-adult" min="0">
+        <label for="sl-child">SL Child</label>
+        <input type="number" id="sl-child" min="0">
+        <label for="infant">Infant</label>
+        <input type="number" id="infant" min="0">
+   
+
+        <h2>Duration</h2>
+        <select id="duration" >
+          <option value="1">07.00 am - 08.00 am</option>
+          <option value="2">08.00 am - 09.00 am</option>
+          <option value="3">09.00 am - 10.00 am</option>
+          <option value="4">10.00 am - 11.00 am(peak)</option>
+          <option value="5">11.00 am - 12.00 pm(peak)</option>
+          <option value="6">12.00 pm - 01.00 pm(peak)</option>
+          <option value="7">01.00 pm - 02.00 pm</option>
+          <option value="8">02.00 pm - 03.00 pm</option>
+          <option value="9">03.00 pm - 04.00 pm(peak)</option>
+          <option value="10">04.00 pm - 05.00 pm(peak)</option>
+          <option value="11">05.00 pm - 06.00 pm(peak)</option>
+        </select>
+    </div>    
+</form>
+</section>
+
+<section class="section2">
+<div class="pricing-section">
+  <h2>Pricing List</h2>
+  <table id="pricing-table">
+      <thead >
+          <tr>
+              <th>Category</th>
+              <th>Normal Hour</th>
+              <th>Peak Hour</th>
+          </tr>
+      </thead>
+      <tbody class="price-value">
+          <tr>
+              <td>Foreigner Adult</td>
+              <td>$10</td>
+              <td>$13</td>
+          </tr>
+          <tr>
+              <td>Foreigner Child</td>
+              <td>$5</td>
+              <td>$8</td>
+          </tr>
+          <tr>
+              <td>SL Adult</td>
+              <td>$4</td>
+              <td>$6</td>
+          </tr>
+          <tr>
+              <td>SL Child</td>
+              <td>$2</td>
+              <td>$3</td>
+          </tr>
+      </tbody>
+  </table>
+</div>
+
+<div class="section">
+    <!--tickets table and total paypal section-->
+    <table id="summary-table">
+      <thead>
+        <tr>
+          <th>Guests</th>
+          <th>Date</th>
+          <th>Time</th>
+          <th>Duration</th>
+          <th>Number of Tickets</th>
+          <th>Tickets Value</th>
+        </tr>
+      </thead>
+      <tbody id="tickets-table">
+        <!--dynamically updated-->
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="5">Total Payable:</td>
+          <td id="total-paypal">$0</td>
+        </tr>
+     
+      </tfoot>
+    </table>
+  </div>
+
+  <button id="continue-button" disabled>Continue with purchase</button>
+</section> 
+</div>
+</div>
+    <script src="./ticket.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+</body>
+</html>

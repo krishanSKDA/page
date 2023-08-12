@@ -1,0 +1,417 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(123, 100, 100, 0.8)), url(./img/b.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Header Styling */
+header {
+    background: url(./img/back2.jpg);
+    text-align: center;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    overflow: hidden;
+    border-radius: 0 0 50% 50% / 30%;
+}
+
+/* Overlay Styling */
+header .overlay {
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    color: #FFF;
+    text-shadow: 1px 1px 1px #333;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+}
+
+/* Heading 1 Styling */
+h1 {
+    color: rgba(45, 224, 255, 0.685);
+    font-family: Suez One;
+    font-size: 80px;
+    margin-bottom: 30px;
+}
+
+/* Heading 3 Styling */
+h3 .txt {
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+/* Additional Heading 3 Styling */
+h3 {
+    margin-bottom: 20px;
+    color: red;
+}
+
+/* Text Styling */
+.txt {
+    text-align: center;
+    color: #FFF;
+    font-weight: 400;
+}
+
+/* Main Container Styling */
+.container {
+    display: flex;
+    width: 100%;
+    margin: 3% auto;
+}
+
+/* UI Styling */
+.ui {
+    border: 0;
+    box-shadow: 0 0 10px 0 rgba(149, 184, 209, .5);
+    border-radius: 10px;
+    width: 60%;
+    height: 40%;
+    margin: 20px auto;
+    padding: 5%;
+    display: flex;
+    gap: 10px;
+    background: linear-gradient(rgba(0, 10, 0, 0.7), rgba(10, 0, 0, 0.6)), url(./img/pay.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Left Container Styling */
+.container-left {
+    width: 50%;
+}
+
+/* Right Container Styling */
+.container-right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Card Styling */
+.card {
+    width:380px;
+    height: 260px;
+    margin: 0 auto;
+    background: linear-gradient(45deg, rgba(2, 0, 36, 1) 0%, rgba(0, 140, 177, 1) 35%, rgba(0, 29, 125, 1) 100%);
+    border: 1px solid rgba(255, 15, 15, 0.3);
+    border-radius: 10px;
+}
+
+/* Intern Styling */
+.intern {
+    padding: 25px;
+}
+
+/* Approximation Styling */
+.approximation {
+    width: 40px;
+    transform: rotate(90deg);
+}
+
+/* Chip Styling */
+.chip {
+    height: 50px;
+    position: relative;
+    left: 90%;
+    bottom: 30px;
+}
+
+/* Card Number Styling */
+.card-number {
+    margin-top: 40px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: white;
+    display: flex;
+}
+
+/* Card Holder Styling */
+.card-holder {
+    color: whitesmoke;
+}
+
+/* Card Label Styling */
+.card label {
+    font-size: .7rem;
+}
+
+/* Card Infos Styling */
+.card-infos {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    color: white;
+}
+
+/* Credit Card Styling */
+#credit-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 1.1rem;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* Number and Name Container Styling */
+.number-container, .name-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Expiration and CVV Container Styling */
+.expiration-container, .cvv-container {
+    width: 50%;
+}
+
+/* Input Styling */
+input {
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 1.1rem;
+    outline: 0;
+    width: 90%;
+}
+
+/* Focused Input Styling */
+input[type="text"]:focus {
+    border: 1px solid #f7e300;
+}
+
+/* Additional Input Styling */
+input#valid-thru-text, input#cvv-text {
+    width: 60%;
+}
+
+/* Submit Button Styling */
+input[type="submit"] {
+    width: 90%;
+    background-color: #141a1b;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    background-color: #d5ec0ca6;
+    color: #000000;
+}
+/* Infos Container Styling */
+.infos-container {
+    display: flex;
+}
+
+/* Summary Table Styling */
+.summary-table {
+    background-color: #000000;
+    color: #fff;
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Table Header and Data Cell Styling */
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #000000;
+}
+
+/* Table Header Styling */
+th {
+    background-color: #37bf7f;
+    color: #000000;
+}
+
+/* Ticket and User Details Styling */
+.ticket-details, .user-details {
+    text-align: center;
+    margin: 20px auto;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 20px;
+    width: 100%;
+    background-color: #3e804d;
+    box-shadow: 0px 2px 5px rgba(14, 223, 105, 0.985);
+    opacity: 0;
+    animation: fadeIn 5s ease-in-out forwards;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* Ticket Details Table Styling */
+#ticket-details-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+
+/* Add this new CSS class for the payment success message */
+.payment-success {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100vh;
+    transform: translate(-50%, -50%);
+    background:linear-gradient(rgba(0,1,0,0.5),rgba(0,1,0,0.6));
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fefbfb;
+    font-weight: bold;
+    text-align: center;
+    z-index: 9999;
+    font-size: 30px;
+}
+
+/* ... Rest of your existing CSS styles ... */
+
+/* Ticket Details Table Header and Data Cell Styling */
+#ticket-details-table th,
+#ticket-details-table td {
+    border: 1px solid #000000;
+    padding: 8px;
+    font-weight: 800;
+    color: black;
+}
+
+/* Ticket Details Table Header Styling */
+#ticket-details-table th {
+    background-color: #f2f2f2;
+}
+
+/* Alternate Ticket Details Table Row Styling */
+#ticket-details-table td:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+/* Total Paragraph Styling */
+#total {
+    font-weight: bold;
+    color: #e0c8c8;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+/* User Details Styling */
+.user-details {
+    margin-top: 20px;
+    font-weight: bold;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 5px rgb(242, 198, 21);
+}
+
+/* User Details Paragraph Styling */
+.user-details p {
+    margin: 5px ;
+    
+   
+}
+
+/* Fade Out Animation */
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+/* Disable Animation on Load */
+body.animation {
+    animation: none;
+}
+
+/* Apply Fade Out Animation */
+body.animation.fadeOut {
+    animation: fadeOut 1s;
+}
+/* Media Query for Responsive Layout between 300px and 1200px */
+@media only screen and (max-width: 1200px) and (min-width: 300px) {
+    body {
+        background-size: 100%;
+    }
+
+    header {
+        background-size: 100%;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    h3 .txt {
+        font-weight: 600;
+    }
+
+    .card {
+        width: 310px;
+        height: 200px;
+        margin: 0 auto;
+        background: linear-gradient(45deg, rgba(2, 0, 36, 1) 0%, rgba(0, 140, 177, 1) 35%, rgba(0, 29, 125, 1) 100%);
+        border: 1px solid rgba(255, 15, 15, 0.3);
+        border-radius: 10px;
+    }
+
+    .intern {
+        padding: 1px;
+    }
+
+    .approximation {
+        width: 30px;
+        transform: rotate(90deg);
+    }
+
+    .chip {
+        height: 40px;
+        position: relative;
+        left: 80%;
+        bottom: 40px;
+    }
+
+    .card-number {
+        margin-top: 40px;
+        font-size: 1rem;
+        font-weight: 700;
+        color: white;
+        display: flex;
+    }
+
+    .ui {
+        flex-direction: column-reverse;
+    }
+
+    .container-left,
+    .container-right {
+        width: 100%;
+    }
+}
+

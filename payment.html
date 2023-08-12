@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+<link rel="manifest" href="./site.webmanifest">
+<link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#00aba9">
+<meta name="theme-color" content="#ffffff">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Details</title>
+    <link rel="stylesheet" href="./payment.css">
+</head>
+<body>
+    <header>
+        <div class="overlay">
+            <h1>Buy Tickets</h1>
+            <h3>Payment Details</h3>
+            <p class="txt">Welcome to our secure payment gateway. Your transactions are safe and encrypted for your peace of mind. Please provide your payment information below to complete your purchase. Thank you for choosing our services!</p>
+        </div>
+    </header>
+    <div class="container1">
+        <main class="container">
+            <section class="ui">
+                <div class="container-left">
+                    <form id="credit-card">
+                        <div class="number-container">
+                            <label for="card-number">Card Number</label>
+                            <input type="text" name="card-number" id="card-number" placeholder="1234 5678 9101 1121" required autocomplete="off">
+                        </div>
+                        <div class="name-container">
+                            <label for="name-text">Name on Card</label>
+                            <input type="text" name="name-text" id="name-text" placeholder="Krishan Danushka" required autocomplete="off">
+                        </div>
+                        <div class="infos-container">
+                            <div class="expiration-container">
+                                <label for="valid-thru-text">Expiry Date</label>
+                                <input type="text" name="valid-thru-text" id="valid-thru-text" placeholder="02/28" required autocomplete="off">
+                            </div>
+                            <div class="cvv-container">
+                                <label for="cvv-text">CVC / CVV</label>
+                                <input type="text" name="cvv-text" id="cvv-text" placeholder="123" required>
+                            </div>
+                        </div>
+                        <input type="submit" value="Pay" id="pay-btn" disabled>
+                    </form>
+                </div>
+                <div class="container-right">
+                    <div class="card">
+                        <div class="intern">
+                            <img class="approximation" src="./img/aprox.png" alt="aproximation">
+                            <div class="card-number">
+                                <div class="number-vl">1234 5678 9101 1121</div>
+                            </div>
+                            <div class="card-holder">
+                                <label>Name on Card</label>
+                                <div class="name-vl">Holder name</div>
+                            </div>
+                            <div class="card-infos">
+                                <div class="exp">
+                                    <label>Expiry Date</label>
+                                    <div class="expiration-vl">02/28</div>
+                                </div>
+                                <div class="cvv">
+                                    <label>CVC / CVV</label>
+                                    <div class="cvv-vl">123</div>
+                                </div>
+                            </div>
+                            <img class="chip" src="./img/chip.png" alt="chip">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sec2">
+                <div class="summary-table">
+                    <h2>Summary Table</h2>
+                    <table id="summary-table">
+                        <thead>
+                            <tr>
+                                <th>Card Number</th>
+                                <th>Name on Card</th>
+                                <th>Expiry Date</th>
+                                <th>CVC / CVV</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Data from Local Storage will be populated here -->
+                        </tbody>
+                    </table>
+                    <button id="clear-data">Clear Data</button>
+                </div>
+                <div class="ticket-details">
+                    <h2 id="heading1">Ticket Details</h2>
+                    <table id="ticket-details-table">
+                        <thead>
+                            <tr>
+                                <th>Category</th>
+                                <th>Quantity</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody >
+                            <!-- Data from Local Storage will be populated here -->
+                        </tbody>
+                    </table>
+                    <p id="total">Total Payable: $<span id="total-payable"></span></p>
+                </div>
+                <div class="user-details">
+                    <h2 id="heading2">User Details</h2>
+                    <p id="user-name">Name: <span></span></p>
+                    <p id="user-email">Email: <span></span></p>
+                    <p id="user-mobile">Mobile Number: <span></span></p>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="./payment.js"></script>
+</body>
+</html>

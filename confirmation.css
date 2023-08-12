@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
-/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -119,59 +118,23 @@ h2 {
 /* Responsive Styles */
 
 
-/* Responsive Styles */
+
 @media only screen and (max-width: 1200px) and (min-width: 300px) {
-    /* Adjustments for smaller screens */
+   
 
     #reservationTable {
-        width: 90%;
-        margin: 0 auto;
+        width: 88%;
     }
 
     #reservationTable th,
     #reservationTable td {
         padding: 6px;
-        font-size: 14px;
-    }
-
-    h1 {
-        font-size: 60px;
-        margin-bottom: 20px;
-    }
-
-    h3 {
-        font-size: 24px;
-    }
-
-    .confirmation-message {
-        font-size: 20px;
-        padding: 20px;
-        border-radius: 10px;
-    }
-
-    #detailsTableBody {
-        font-size: 16px;
-    }
-}
-
-/* Advanced Media Query */
-@media only screen and (max-width: 768px) {
-    
-
-    #reservationTable {
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    #reservationTable th,
-    #reservationTable td {
-        padding: 4px;
-        font-size: 12px;
+        font-size: 13px;
     }
 
     h1 {
         font-size: 40px;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
 
     h3 {
@@ -179,11 +142,27 @@ h2 {
     }
 
     .confirmation-message {
-        font-size: 18px;
-        padding: 15px;
+        font-size: 16px;
+        border-radius: 10px;
     }
 
     #detailsTableBody {
         font-size: 14px;
     }
+    
+
+body {
+    background: rgb(103, 68, 68);
+  
+}
+
+.property-column {
+    width: 50%;
+}
+
+.value-column {
+    width: 50%;
+}
+
+
 }
